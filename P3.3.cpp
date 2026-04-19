@@ -12,7 +12,6 @@ private:
 public:
     static int totalAccounts;
 
-    // Constructor
     Account(int accNo, string n, double bal) {
         accountNumber = accNo;
         name = n;
@@ -56,10 +55,8 @@ public:
     }
 };
 
-// Initialize static member
 int Account::totalAccounts = 0;
 
-// Function to find account by number
 int findAccount(vector<Account> &accounts, int accNo) {
     for (int i = 0; i < accounts.size(); i++) {
         if (accounts[i].getAccountNumber() == accNo)
